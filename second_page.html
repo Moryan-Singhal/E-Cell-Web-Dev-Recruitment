@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+    <!--for media query-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E Cell Web Development Team</title>
+    <link rel="stylesheet" href="second.css" >
+  </head>
+ 
+  <body>
+    
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="Home">
+        <a href="second_page.html">Home</a>
+      </div>
+      <div class="Grid">
+        <a href="first_page.html">Grid</a>
+      </div>
+      <div class="LinkedIn">
+        <a href="https://www.linkedin.com/in/moryan-singhal">LinkedIn</a>
+      </div>
+    </header>
+
+    <div class="hamburger" id="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="menu" id="menu">
+      <li><a href="second_page.html">Home</a></li>
+      <li><a href="first_page.html">Grid</a></li>
+      <li><a href="https://www.linkedin.com/in/moryan-singhal">LinkedIn</a></li>
+    </ul>
+
+
+    <h2>Moryan Singhal</h2>
+    <br>
+    <h3>Reg. Number - 20247031</h3>
+    <br><br>
+    <a href="https://www.instagram.com/_nayrom_/">Insta Handle</a>    
+
+    <script>
+      
+      const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+  </script>
+  </body>
+</html>

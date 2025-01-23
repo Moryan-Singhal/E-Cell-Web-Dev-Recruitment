@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+    <!--for media query-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E Cell Web Development Team</title>
+    <link rel="stylesheet" href="first.css" >
+  </head>
+ 
+  <body>
+    
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="Home">
+        <a href="second_page.html">Home</a>
+      </div>
+      <div class="Grid">
+        <a href="first_page.html">Grid</a>
+      </div>
+      <div class="LinkedIn">
+        <a href="https://www.linkedin.com/in/moryan-singhal">LinkedIn</a>
+      </div>
+    </header>
+
+    <div class="hamburger" id="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="menu" id="menu">
+      <li><a href="second_page.html">Home</a></li>
+      <li><a href="first_page.html">Grid</a></li>
+      <li><a href="https://www.linkedin.com/in/moryan-singhal">LinkedIn</a></li>
+    </ul>
+
+    <div class="main">
+      <div class="gradient">
+        
+      </div>
+
+      <div class="inner-flex">
+        <div class="ecell_logo">
+          <img src="logo.png" class="ecell">
+        </div>
+        <div class="box1">
+          <div class="box2">
+            <!-- The 9 squares -->
+            <button class="square"></button>
+            <button class="square"></button>
+            <button class="square"></button>
+            <button class="square"></button>
+            <button class="square"></button>
+            <button class="square"></button>
+            <button class="square"></button>
+            <button class="square"></button>
+            <button class="square"></button>
+         </div>
+    
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      const squares = document.querySelectorAll('.square');
+
+      squares.forEach(square => {
+          square.addEventListener('click', () => {
+              square.style.backgroundColor = '#7A0000';
+          });
+      });
+
+      const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+  </script>
+  </body>
+</html>
