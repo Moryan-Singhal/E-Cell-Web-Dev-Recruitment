@@ -61,7 +61,7 @@ a {
 .ecell {
   width: 30vw;
   height: 30vw;
-
+  border-radius: 15px;
 }
 
 .box1{
