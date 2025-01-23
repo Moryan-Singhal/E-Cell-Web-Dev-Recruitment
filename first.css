@@ -111,8 +111,11 @@ a {
 /* Hamburger menu for mobile */
 .hamburger {
   display: none;
+  margin-top:3vw;
+  margin-left: 90vw;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-end;
   width: 30px;
   height: 25px;
   cursor: pointer;
@@ -130,15 +133,15 @@ a {
   list-style: none;
   padding: 0;
   background-color: #fff;
-  position: absolute;
+  
   top: 0;
   left: 0;
   width: 100%;
   
-  margin-top: 10vw;
+  margin-top: 6vw;
   overflow-y: auto;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 999;
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.2);
+  
 }
 
 .menu li {
@@ -161,6 +164,7 @@ a {
   display: block;
   animation: slideDown 0.3s ease;
 }
+
 
 @keyframes slideDown {
   from {
@@ -241,5 +245,8 @@ a {
   }
   .hamburger {
     display: flex;
+  }
+  .hamburger:active {
+    transform: scale(0.95);
   }
 }
